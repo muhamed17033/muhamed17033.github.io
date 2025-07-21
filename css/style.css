@@ -33,7 +33,7 @@
         nav {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-end;
         }
 
         .logo {
@@ -42,17 +42,19 @@
             display: flex;
             align-items: center;
         }
-
+        
         .logo::before {
             content: "⚡";
             margin-right: 10px;
             font-size: 2rem;
         }
 
+
         .nav-links {
             display: flex;
             list-style: none;
             gap: 2rem;
+            align-items: flex-end;
         }
 
         .nav-links a {
@@ -162,27 +164,27 @@
             margin-bottom: 1rem;
             font-size: 1.5rem;
         }
-
         /* About Section */
-        .about {
+/*
+        .projects {
             padding: 80px 0;
             background: linear-gradient(135deg, #2c7a2c, #4a9a4a);
             color: white;
         }
 
-        .about-content {
+        .projects-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
             align-items: center;
         }
 
-        .about-text h2 {
+        .projects-text h2 {
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
         }
 
-        .about-text p {
+        .projects-text p {
             font-size: 1.1rem;
             margin-bottom: 1.5rem;
             opacity: 0.9;
@@ -206,6 +208,7 @@
             font-weight: bold;
             color: #90EE90;
         }
+        */
 
         /* Contact Section */
         .contact {
@@ -297,15 +300,11 @@
             .nav-links {
                 display: none;
             }
-
             .hero{
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: auto;
                 background-image: url(../img/Green\ Modern\ Sustainable\ Living\ Nature\ Presentation_page-0001.jpg);
-                padding: 0%;
-                width: 100%;
-                height: auto;
             }
 
             .hero h1 {
@@ -326,30 +325,56 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: auto;
-                width: 100%;
-                height: 100%;
                 background-image: url(../img/Green\ Modern\ Sustainable\ Living\ Nature\ Presentation_page-0001.jpg);
             }
-     }   
+
+        }
+
         @media (max-width: 1440px) {
-            .hero{
-                width: 100%;
-                height: 100%;
-                background-image: url(../img/2.jpg);
+            .hero {
+                background-repeat: no-repeat;
+                background-image: url(../img/Green\ Modern\ Sustainable\ Living\ Nature\ Presentation_page-0001.jpg);
+                background-size: auto;
+                background-position: center
+            }
+
+        }
+
+        @media (max-width: 1920px) {
+            .hero {
                 background-repeat: no-repeat;
                 background-position: center;
+                background-image: url(../img/Green\ Modern\ Sustainable\ Living\ Nature\ Presentation_page-0001.jpg);
                 background-size: auto;
             }
         }
-    @media (max-width: 1920px) {
-        .hero {
-            width: 100%;
-            height: 100%;
-            background-image: url(../img/2.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: auto;
 
-        }
-    }  
-    
+        .product-cards-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}

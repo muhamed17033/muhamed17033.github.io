@@ -10,7 +10,7 @@
     <!-- Header -->
     <header>
         <nav class="container">
-            <div class="logo">Energy Partners</div>
+            <div class="logo"></div>
             <ul class="nav-links">
                 <li><a href="#home">Početna</a></li>
                 <li><a href="#services">Usluge</a></li>
@@ -58,12 +58,31 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
+<section id="products">
+  <div class="product-cards-container">
+    <div class="product-card" onclick="handleCardClick(1)">
+      <img src="images/product1.jpg" alt="Product One" class="product-image">
+      <h3>Product One</h3>
+      <p>$19.99</p>
+    </div>
+    <div class="product-card" onclick="handleCardClick(2)">
+      <img src="images/product2.jpg" alt="Product Two" class="product-image">
+      <h3>Product Two</h3>
+      <p>$29.99</p>
+    </div>
+    <div class="product-card" onclick="handleCardClick(3)">
+      <img src="images/product3.jpg" alt="Product Three" class="product-image">
+      <h3>Product Three</h3>
+      <p>$39.99</p>
+    </div>
+  </div>
+</section>
+<!-- 
+   <section class="projects" id="projects">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>O Energy Partners</h2>
+            <div class="projects-content">
+                <div class="projects-text">
+                    <h2>Energy Partners Projekti</h2>
                     <p>Vodimo revoluciju u oblasti održive energije kroz inovativna rješenja i partnerstva. Naš tim stručnjaka posvećen je kreiranju čiste energetske budućnosti.</p>
                     <p>Sa višegodišnjim iskustvom i projektima širom regiona, postali smo pouzdani partner za sve vaše energetske potrebe.</p>
                 </div>
@@ -88,7 +107,7 @@
             </div>
         </div>
     </section>
-
+    -->
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
@@ -107,7 +126,7 @@
                         <div class="contact-icon">📞</div>
                         <div>
                             <strong>Telefon:</strong><br>
-                            +387 62 131 375
+                            +387 33 621567
                         </div>
                     </div>
                     <div class="contact-item">
@@ -125,22 +144,22 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" onsubmit="handleSubmit(event)">
+                <form action="mail.php" method="post">
                     <h3>Pošaljite poruku</h3>
                     <div class="form-group">
-                        <label for="name">Ime i prezime</label>
+                        <label for="name">Ime i prezime:</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email adresa</label>
+                        <label for="email">Email adresa:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Telefon</label>
+                        <label for="phone">Telefon:</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
                     <div class="form-group">
-                        <label for="message">Poruka</label>
+                        <label for="message">Poruka:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="cta-button">Pošalji poruku</button>
@@ -152,10 +171,14 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Energy Partners. Sva prava zadržana. | Održiva energija za bolju budućnost</p>
+            <p>&copy; 2025 Energy Partners. Sva prava zadržana. | Održiva energija za bolju budućnost.</p>
         </div>
     </footer>
     <script>
+        function handleCardClick(productId) {
+  alert('Clicked product ' + productId);
+  // Or window.location.href = '/product/' + productId;
+}
          // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -169,28 +192,7 @@
                 }
             });
         });
-
-        // Form submission
-        function handleSubmit(event) {
-            event.preventDefault();
-            const form = event.target;
-            const formData = new FormData(form);
-            
-            // Simulate form submission
-            alert('Hvala vam na poruci! Kontaktiraćemo vas u najkraćem mogućem roku.');
-            form.reset();
-        }
-
-        /*
-        // Header background on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(44, 122, 44, 0.95)';
-            } else {
-                header.style.background = 'linear-gradient(135deg, #2c7a2c, #4a9a4a)';
-            }
-        }); */
     </script>
+
 </body>
 </html>
