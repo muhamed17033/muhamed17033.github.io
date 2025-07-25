@@ -242,6 +242,10 @@
         }
         /* Responsive */
         @media (max-width: 768px) {
+           .product-card{
+            max-width: 6.25rem;
+           } 
+
             .nav-links {
                 display: none;
             }
