@@ -243,6 +243,10 @@
         /* Responsive */
         @media (max-width: 768px) {
            .product-card{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            ;
             max-width: 6.25rem;
            } 
 
