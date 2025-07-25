@@ -20,7 +20,6 @@
             </ul>
         </nav>
     </header>
-
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
@@ -29,20 +28,20 @@
             <a href="#contact" class="cta-button">Kontaktirajte nas</a>
         </div>
     </section>
+    <!-- About Section -->
 <section class="about" id="about">
     <div class="container">
-        <h2 class="section-title">O Nama</h2>
+        <h2 class="section-title1">O Nama</h2>
         <p>Ako planirate ulaganje u obnovljive izvore energije u ovom dijelu Evrope - <strong>mi smo vaša veza sa lokalnim tržištem.</strong></p>
         <p>Uz višegodišnje iskustvo članova našeg tima u sektoru obnovljivih izvora energije, 
             duboko razumijevanje lokalnih zakonodavnih i tehničkih okvira te naše mreže pouzdanih partnera i kontakata na terenu,
              nudimo Vam širok spektar usluga uz fokus na dugoročno održive projekte i minimizaciju investicionog rizika.</p>
     </div>
 </section>
-
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title">Naše Usluge</h2>
+            <h2 class="section-title1">Naše Usluge</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <h3><strong>POSREDOVANJE PRI KUPNJI I PRODAJI</strong></h3>
@@ -76,57 +75,28 @@
             </div>
         </div>
     </section>
-
+<!-- Products Section -->
 <section id="products">
+    <h3 class="products-heading">Proizvodi</h3>
   <div class="product-cards-container">
-    <div class="product-card" onclick="handleCardClick(1)">
-      <img src="images/product1.jpg" alt="Product One" class="product-image">
-      <h3>Product One</h3>
-      <p>$19.99</p>
-    </div>
-    <div class="product-card" onclick="handleCardClick(2)">
-      <img src="images/product2.jpg" alt="Product Two" class="product-image">
-      <h3>Product Two</h3>
-      <p>$29.99</p>
-    </div>
-    <div class="product-card" onclick="handleCardClick(3)">
-      <img src="images/product3.jpg" alt="Product Three" class="product-image">
-      <h3>Product Three</h3>
-      <p>$39.99</p>
-    </div>
+    <a href="products.html#informations" class="product-link"><div class="product-card">
+      <img src="img/WhatsApp Image 2025-07-25 at 13.44.42 (1).jpeg" alt="Product One" class="product-image">
+      <h3>SOLARNA FOTONAPONSKA ELEKTRANA SNAGE 7,5MW</h3>
+    </div></a>
+    <a href="products.html#informations" class="product-link"><div class="product-card">
+      <img src="img/WhatsApp Image 2025-07-25 at 13.44.42.jpeg" alt="Product Two" class="product-image">
+      <h3>SOLARNA FOTONAPONSKA ELEKTRANA 10MW</h3>
+    </div></a>
+    <a href="products.html#informations" class="product-link"><div class="product-card">
+      <img src="img/WhatsApp Image 2025-07-25 at 13.44.43.jpeg" alt="Product Three" class="product-image">
+      <h3>SOLARNA FOTONAPONSKA ELEKTRANA SNAGE 450kW</h3>
+    </div></a>
+    <a href="products.html#informations" class="product-link"><div class="product-card">
+        <img class="product-image" src="img/WhatsApp Image 2025-07-25 at 13.44.42 (2).jpeg" alt="Product Four">
+        <h3 class="heading">SOLARNA FOTONAPONSKA ELEKTRANA SNAGE 1MW</h3>
+    </div></a>
   </div>
 </section>
-<!-- 
-   <section class="projects" id="projects">
-        <div class="container">
-            <div class="projects-content">
-                <div class="projects-text">
-                    <h2>Energy Partners Projekti</h2>
-                    <p>Vodimo revoluciju u oblasti održive energije kroz inovativna rješenja i partnerstva. Naš tim stručnjaka posvećen je kreiranju čiste energetske budućnosti.</p>
-                    <p>Sa višegodišnjim iskustvom i projektima širom regiona, postali smo pouzdani partner za sve vaše energetske potrebe.</p>
-                </div>
-                <div class="stats">
-                    <div class="stat-item">
-                        <div class="stat-number">0</div>
-                        <div>Uspešnih projekata</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">0</div>
-                        <div>Godina iskustva</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">0MW</div>
-                        <div>Instalirane snage</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">0%</div>
-                        <div>Zadovoljnih klijenata</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
@@ -163,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <form action="mail.php" method="post">
+                <form id="form" action="mail.php" method="post">
                     <h3>Pošaljite poruku</h3>
                     <div class="form-group">
                         <label for="name">Ime i prezime:</label>
@@ -186,7 +156,6 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -194,10 +163,6 @@
         </div>
     </footer>
     <script>
-        function handleCardClick(productId) {
-  alert('Clicked product ' + productId);
-  // Or window.location.href = '/product/' + productId;
-}
          // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
