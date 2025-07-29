@@ -3,7 +3,6 @@
             padding: 0;
             box-sizing: border-box;
             background: no-repeat;
-          /*  color: ; */
         }
 
         body {
@@ -43,19 +42,14 @@
             display: flex;
             align-items: center;
         }
-        /*
-        .logo::before {
-            content: "⚡";
-            margin-right: 10px;
-            font-size: 2rem;
-        }
-        */
+
         .nav-links {
             display: flex;
             list-style: none;
             gap: 2rem;
             align-items: flex-end;
         }
+
         .nav-links a {
             color: white;
             text-decoration: none;
@@ -65,6 +59,7 @@
         .nav-links a:hover {
             color: gray;
         }
+
         /* Hero Section */
         .hero {
             background: green;
@@ -80,21 +75,25 @@
             background-position: 10px;
             background-repeat: no-repeat;
         }
+
         .hero-content {
             max-width: 800px;
             animation: fadeInUp 1s ease-out;
            
         }
+
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
+
         .hero p {
             font-size: 1.3rem;
             margin-bottom: 2rem;
             opacity: 0.9;
         }
+
         .cta-button {
             background: linear-gradient(45deg, #90EE90, #32CD32);
             color: #2c7a2c;
@@ -108,10 +107,12 @@
             display: inline-block;
             transition: transform 0.3s, box-shadow 0.3s;
         }
+
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(144, 238, 144, 0.4);
         }
+
         /* About Section */
         .about{
             width: 100%;
@@ -246,9 +247,12 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            ;
             max-width: 6.25rem;
            } 
+
+           nav {
+            display: none;
+           }
 
             .nav-links {
                 display: none;
