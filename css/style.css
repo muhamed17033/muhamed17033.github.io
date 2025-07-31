@@ -56,6 +56,7 @@
             font-weight: 500;
             transition: color 0.3s;
         }
+        
         .nav-links a:hover {
             color: gray;
         }
@@ -119,34 +120,40 @@
             height: 100%;
             background-color: #2c7a2c;
         }
+
         .about p{
             text-align: center;
             line-height: 1.6;
             color: white;
             padding: 0% 0 6% 0;
         }
+
         /* Services Section */
         .services {
             padding: 80px 0;
             background: #000;
         }
+
         .section-title1 {
             color: #fff;
             text-align: center;
             margin-bottom: 3rem;
             font-size: 3.5rem;
         }
+
         .section-title {
             text-align: center;
             font-size: 2.5rem;
             color: 333;
             margin-bottom: 3rem;
         }
+
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
+
         .service-card {
             background: white;
             padding: 2rem;
@@ -155,60 +162,72 @@
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
             transition: transform 0.3s, box-shadow 0.3s;
         }
+
         .service-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0,0,0,0.15);
         }
+
         .service-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
         }
+
         .service-card h3 {
             color: #2c7a2c;
             margin-bottom: 1rem;
             font-size: 1.5rem;
         }
+
         /* Contact Section */
         .contact {
             padding: 80px 0;
             background: #f8f9fa;
         }
+
         .contact-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
         }
+
         .contact-info {
             background: white;
             padding: 2rem;
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
+
         .contact-item {
             display: flex;
             align-items: center;
             margin-bottom: 1.5rem;
         }
+
         .contact-icon {
             font-size: 1.5rem;
             margin-right: 1rem;
             color: #2c7a2c;
         }
+
         .contact-form {
             background: white;
             padding: 2rem;
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
+
         .form-group {
             margin-bottom: 1.5rem;
         }
+
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
             color: #2c7a2c;
             font-weight: 600;
         }
+
         .form-group input,
         .form-group textarea {
             width: 100%;
@@ -218,11 +237,13 @@
             font-size: 1rem;
             transition: border-color 0.3s;
         }
+
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
             border-color: #4a9a4a;
         }
+
         /* Footer */
         footer {
             background: #2c7a2c;
@@ -230,6 +251,7 @@
             text-align: center;
             padding: 2rem 0;
         }
+
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -241,6 +263,7 @@
                 transform: translateY(0);
             }
         }
+
         /* Responsive */
         @media (max-width: 768px) {
            .product-card{
@@ -277,6 +300,7 @@
                 grid-template-columns: 1fr;
             }
         }
+
         @media (max-width: 1024px) {
             .hero{
                 background-repeat: no-repeat;
@@ -286,6 +310,7 @@
             }
 
         }
+
         @media (max-width: 1440px) {
             .hero {
                 background-repeat: no-repeat;
@@ -295,6 +320,7 @@
             }
 
         }
+
         @media (max-width: 1920px) {
             .hero {
                 background-repeat: no-repeat;
@@ -310,23 +336,27 @@
             padding: 80px 0;
             background: #000;
         }
+
         .section-title1 {
             color: #fff;
             text-align: center;
             margin-bottom: 3rem;
             font-size: 3.5rem;
         }
+
         .sction-title {
             text-align: center;
             font-size: 2.5rem;
             color: 333;
             margin-bottom: 3rem;
         }
+
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
+
         .project-card {
             background: white;
             padding: 2rem;
@@ -335,14 +365,17 @@
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
             transition: transform 0.3s, box-shadow 0.3s;
         }
+
         .project-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0,0,0,0.15);
         }
+
         .project-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
         }
+
         .project-card h3 {
             color: #2c7a2c;
             margin-bottom: 1rem;
@@ -351,4 +384,9 @@
 
         .project-list {
             text-align: left;
+        }
+
+        .telephone {
+            text-decoration: none;
+            color: #000;
         }
